@@ -102,17 +102,22 @@ sudo mkdir /mnt/nowplaying
 sudo chown -R [user]:root /mnt/nowplaying
 sudo chmod -R 0770 /mnt/nowplaying
 ```
-create smbcredentials file
+create smbcredentials file in user folder
 ```
-sudo notepadqq ~/.smbcredentials
+notepadqq ~/.smbcredentials
 ```
 make content as follows
 ```
 username=user
 password=password
 ```
+edit file permissions
+```
+chmod 600 ~/.smbcredentials
+```
 5. edit fstab file to automount this location
 ```
+sudo notepadqq /etc/fstab --allow-root
 //[machine name]/nowplaying /mnt/nowplaying cifs credentials=/home/[user]/.smbcredentials,gid=1000,file_mode=0770,dir_mode=0770,iocharset=utf8 0 0
 ```
 mount to test things out
