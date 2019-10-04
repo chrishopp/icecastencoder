@@ -20,8 +20,9 @@ sudo apt-get install open-vm-tools-desktop
 3. notepadqq (not needed for command line only install)
 ```
 sudo apt-get install snapd
-sudo snap install notepadqq
+sudo snap install notepadqq --devmode
 ```
+to run notepadqq in root, sudo notepadqq --allow-root
 ## uninstall/blacklist onboard devices (if needed)
 1. If using a sound card, disable on-board sound in BIOS, if can't, blacklist sound devices that aren't your preffered device, multiple sound devices make working with audio inputs difficult
 2. discover sound device names
