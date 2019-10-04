@@ -6,7 +6,7 @@ This guide is meant as a basic starting point to setup an encoder to feed an Ice
 
 ## Starting Notes
 1. This guide assumes basic shell knowledge.
-2. These instructions are based on a GUI install. A shell only version is a future project. There aren't many differences aside from the text editor chosen to edit the configuration files. Most everything else is already done in shell only.
+2. These instructions are based on a GUI install. A shell only version is a future project (using a different tool than butt). There aren't many differences aside from the text editor chosen to edit the configuration files. Most everything else is already done in shell only.
 3. These instructions will get the basic encoder, butt, setup and running. Proper setup of the configuration files is currently outside the scope of this guide. The latest documentation of butt can be found at https://danielnoethen.de/butt/manual.html.
 
 ## OS Specific instructions
@@ -15,3 +15,4 @@ This guide is meant as a basic starting point to setup an encoder to feed an Ice
 ## Coming Up
 1. Shell only guide and hints.
 2. Discussion of configuration file.
+3. ESXi setup guide for soundcard passthrough
