@@ -49,7 +49,7 @@ sudo ./configure
 sudo make
 sudo make install
 ```
-5. launch butt for the first time to create first config file in /home/user (file is hidden)
+5. launch butt for the first time to create first config file in /home/[user] (file is hidden)
 ```
 butt
 ```
@@ -66,6 +66,7 @@ sudo apt-get install xscreensaver
 sudo notepadqq /home/[user]/Documents/lock.sh
 ```
 make the content of the file as follows:
+```
 sleep 10
 xscreensaver & -nosplash
 sleep 1
@@ -97,7 +98,7 @@ sudo apt-get install cifs-utils
 make now playing mountpoint locally
 ```
 sudo mkdir /mnt/nowplaying
-sudo chown -R tech:root /mnt/nowplaying
+sudo chown -R [user]:root /mnt/nowplaying
 sudo chmod -R 0770 /mnt/nowplaying
 ```
 create smbcredentials file
@@ -111,7 +112,7 @@ password=password
 ```
 5. edit fstab file to automount this location
 ```
-//[machine name]/nowplaying /mnt/nowplaying cifs credentials=/home/tech/.smbcredentials,gid=1000,file_mode=0770,dir_mode=0770,iocharset=utf8 0 0
+//[machine name]/nowplaying /mnt/nowplaying cifs credentials=/home/[user]/.smbcredentials,gid=1000,file_mode=0770,dir_mode=0770,iocharset=utf8 0 0
 ```
 mount to test things out
 ```
